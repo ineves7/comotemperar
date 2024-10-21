@@ -1,0 +1,119 @@
+[30-Sep-2024 20:18:34 UTC] PHP Fatal error:  Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, stdClass given in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\endpoints\class-wp-rest-pattern-directory-controller.php:202
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\endpoints\class-wp-rest-pattern-directory-controller.php(202): array_map('sanitize_title', Object(stdClass))
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\endpoints\class-wp-rest-pattern-directory-controller.php(176): WP_REST_Pattern_Directory_Controller->prepare_item_for_response(Object(stdClass), Object(WP_REST_Request))
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Pattern_Directory_Controller->get_items(Object(WP_REST_Request))
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pattern-...', Array, NULL)
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api.php(547): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\block-patterns.php(235): rest_do_request(Object(WP_REST_Request))
+#6 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\endpoints\class-wp-rest-block-patterns-controller.php(107): _load_remote_block_patterns()
+#7 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Block_Patterns_Controller->get_items(Object(WP_REST_Request))
+#8 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/block-pa...', Array, NULL)
+#9 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api.php(420): WP_REST_Server->serve_request('/wp/v2/block-pa...')
+#11 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#12 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#13 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#14 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#15 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#16 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\functions.php(1336): WP->main('')
+#17 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-blog-header.php(16): wp()
+#18 C:\Users\iago\Documents\sites\como-temperar\app\public\index.php(17): require('C:\\Users\\iago\\D...')
+#19 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\rest-api\endpoints\class-wp-rest-pattern-directory-controller.php on line 202
+[03-Oct-2024 23:57:26 UTC] PHP Parse error:  syntax error, unexpected identifier "version" in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\index.php on line 42
+[15-Oct-2024 15:26:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_stylesheet_directory_uri() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\index.php:7
+Stack trace:
+#0 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\index.php on line 7
+[21-Oct-2024 18:47:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_function() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php:3
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-settings.php(668): include()
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-config.php(103): require_once('C:\\Users\\iago\\D...')
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-load.php(50): require_once('C:\\Users\\iago\\D...')
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\iago\\D...')
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\index.php(10): require_once('C:\\Users\\iago\\D...')
+#5 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php on line 3
+[21-Oct-2024 18:47:18 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[21-Oct-2024 18:47:18 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[21-Oct-2024 18:47:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_function() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php:3
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-settings.php(668): include()
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-config.php(103): require_once('C:\\Users\\iago\\D...')
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-load.php(50): require_once('C:\\Users\\iago\\D...')
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-blog-header.php(13): require_once('C:\\Users\\iago\\D...')
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\index.php(17): require('C:\\Users\\iago\\D...')
+#5 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php on line 3
+[21-Oct-2024 19:18:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_function() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php:3
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-settings.php(668): include()
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-config.php(103): require_once('C:\\Users\\iago\\D...')
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-load.php(50): require_once('C:\\Users\\iago\\D...')
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\iago\\D...')
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\edit.php(10): require_once('C:\\Users\\iago\\D...')
+#5 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php on line 3
+[21-Oct-2024 19:18:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_function() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php:3
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-settings.php(668): include()
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-config.php(103): require_once('C:\\Users\\iago\\D...')
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-load.php(50): require_once('C:\\Users\\iago\\D...')
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-blog-header.php(13): require_once('C:\\Users\\iago\\D...')
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\index.php(17): require('C:\\Users\\iago\\D...')
+#5 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php on line 3
+[21-Oct-2024 19:18:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_function() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php:3
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-settings.php(668): include()
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-config.php(103): require_once('C:\\Users\\iago\\D...')
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-load.php(50): require_once('C:\\Users\\iago\\D...')
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\iago\\D...')
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\edit.php(10): require_once('C:\\Users\\iago\\D...')
+#5 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php on line 3
+[21-Oct-2024 19:18:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_function() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php:3
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-settings.php(668): include()
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-config.php(103): require_once('C:\\Users\\iago\\D...')
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-load.php(50): require_once('C:\\Users\\iago\\D...')
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-blog-header.php(13): require_once('C:\\Users\\iago\\D...')
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\index.php(17): require('C:\\Users\\iago\\D...')
+#5 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php on line 3
+[21-Oct-2024 19:18:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_function() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php:3
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-settings.php(668): include()
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-config.php(103): require_once('C:\\Users\\iago\\D...')
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-load.php(50): require_once('C:\\Users\\iago\\D...')
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\iago\\D...')
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\index.php(10): require_once('C:\\Users\\iago\\D...')
+#5 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php on line 3
+[21-Oct-2024 19:18:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_function() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php:3
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-settings.php(668): include()
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-config.php(103): require_once('C:\\Users\\iago\\D...')
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-load.php(50): require_once('C:\\Users\\iago\\D...')
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-blog-header.php(13): require_once('C:\\Users\\iago\\D...')
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\index.php(17): require('C:\\Users\\iago\\D...')
+#5 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php on line 3
+[21-Oct-2024 19:20:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_field() in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php:16
+Stack trace:
+#0 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp-hook.php(324): cmb2_fields_temperos('')
+#1 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\plugins\cmb2\bootstrap.php(26): do_action('cmb2_admin_init')
+#4 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\plugins\cmb2\init.php(165): cmb2_bootstrap()
+#5 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp-hook.php(324): CMB2_Bootstrap_2110->include_cmb('')
+#6 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-settings.php(700): do_action('init')
+#9 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-config.php(103): require_once('C:\\Users\\iago\\D...')
+#10 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-load.php(50): require_once('C:\\Users\\iago\\D...')
+#11 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\iago\\D...')
+#12 C:\Users\iago\Documents\sites\como-temperar\app\public\wp-admin\index.php(10): require_once('C:\\Users\\iago\\D...')
+#13 {main}
+  thrown in C:\Users\iago\Documents\sites\como-temperar\app\public\wp-content\themes\como-temperar\functions.php on line 16
